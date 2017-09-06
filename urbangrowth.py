@@ -11,14 +11,22 @@ import scipy
 #LCZ = ...
 #LCZ_new = .... #LCZ with densificated properties (height + 3m)
 MASK1 = gdal.Open("D:/_URBANIA/GEODATA/PGO/stadtregionp45_Baulandreserve_georef2.tif") #PGO_FreeScenario
-MASK2a = gdal.Open("D:/_URBANIA/GEODATA/PGO/stadtregionp45_StrukturierteStadtregion_georef.tif") #PGO_Structured
+MASK2a = gdal.Open("D:/_URBANIA/GEODATA/PGO/stadtregionp46_StrukturierteStadtregion_georef.tif") #PGO_Structured
 #MASK2b = D:/_URBANIA/GEODATA/STEP05/GRUENFREILOGD_GRUENGEWOGD# STEP05_Gruen
 #MASK2c = # STEP25_built
 #MASK2d = # STEP25_green?
 #MASK1 = none #close dataset
 
-print MASK1.GetMetadata()
+MASK1_array = MASK1.ReadAsArray()
+print MASK1_array
 
+#plt.hist2d(lc[0],lc[1])
+plt.imshow(MASK1_array)#,interpolation='nearest', vmin=0 )#, cmap=plt.cm.gist_earth)
+#plt.colorbar()
+plt.show()
+
+
+print MASK1.GetMetadata()
 
 #test = random.sample([[1,2],[3,4],[5,6]], 1)
 #print test
