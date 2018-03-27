@@ -8,8 +8,8 @@ Gaensernd = 13.3, 29.3
 Baden = 12.1, 24.1
 BruckL = 15.15, 31.15
 Mistelbach = 4.7, 12.6
-StPoelten Land = 7.2, 13.9
-Krems an der Donau = 3.3,3.8
+StPoeltenLand = 7.2, 13.9
+KremsLand = 3.3,3.8
 Tulln = 11.9, 24.9
 
 W01 = -3.0,-2.7
